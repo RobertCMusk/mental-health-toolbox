@@ -1,0 +1,13 @@
+.action-picker {
+  .action-picker-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    button {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+}
