@@ -1,1 +1,7 @@
-<p>silliness works!</p>
+<div *ngIf="cats.length" class="gradient-mesh silliness">
+    <div *ngFor="let cat of cats" >
+        <img class="cat-image" src={{cat.url}} />
+    </div>
+    <button (click)="moreCatsPlease()">More cats please!</button>
+</div>
+

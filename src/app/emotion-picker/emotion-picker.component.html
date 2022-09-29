@@ -1,20 +1,49 @@
-<div class="container-fluid emotion-picker">
-  <h1>How do you feel today?</h1>
+<div class="container-fluid emotion-picker gradient-mesh">
+  <div class="title">
+    <h1>How do you feel today?</h1>
+  </div>
   <div class="emotion-container">
-    <div class="row">
-      <div class="col-4" (click)="gotoNextPage()">Happy</div>
-      <div class="col-4" (click)="gotoNextPage()">Upset</div>
-      <div class="col-4" (click)="gotoNextPage()">Meh</div>
+    <div class="row emotion-row">
+      <div class="col-4 emotion-container" (click)="gotoNextPage()">
+        <h2>Happy</h2>
+        <p class="emotion-fa-icon">😁</p>
+      </div>
+      <div class="col-4 emotion-container" (click)="gotoNextPage()">
+        <h2>Upset</h2>
+        <p class="emotion-fa-icon">😬</p>
+        </div>
+      <div class="col-4 emotion-container" (click)="gotoNextPage()">
+        <h2>Meh</h2>
+        <p class="emotion-fa-icon">🫤</p>
+      </div>
     </div>
-    <div class="row">
-      <div class="col-4" (click)="gotoNextPage()">Angry</div>
-      <div class="col-4" (click)="gotoNextPage()">Depressed</div>
-      <div class="col-4" (click)="gotoNextPage()">Bitter</div>
+    <div class="row emotion-row">
+      <div class="col-4 emotion-container" (click)="gotoNextPage()">
+        <h2>Angry</h2>
+        <p class="emotion-fa-icon">😠</p>
+      </div>
+      <div class="col-4 emotion-container" (click)="gotoNextPage()">
+        <h2>Depressed</h2>
+        <p class="emotion-fa-icon">😞</p>
+      </div>
+      <div class="col-4 emotion-container" (click)="gotoNextPage()">
+        <h2>Bitter</h2>
+        <p class="emotion-fa-icon">🙁</p>
+      </div>
     </div>
-    <div class="row">
-      <div class="col-4" (click)="gotoNextPage()">Exhausted</div>
-      <div class="col-4" (click)="gotoNextPage()">Giddy</div>
-      <div class="col-4" (click)="gotoNextPage()">Anxious</div>
+    <div class="row emotion-row">
+      <div class="col-4 emotion-container" (click)="gotoNextPage()">
+        <h2>Exhausted</h2>
+        <p class="emotion-fa-icon">😓</p>
+      </div>
+      <div class="col-4 emotion-container" (click)="gotoNextPage()">
+        <h2>Giddy</h2>
+        <p class="emotion-fa-icon">😱</p>
+      </div>
+      <div class="col-4 emotion-container" (click)="gotoNextPage()">
+        <h2>Anxious</h2>
+        <p class="emotion-fa-icon">😨</p>
+      </div>
     </div>
   </div>
 </div>

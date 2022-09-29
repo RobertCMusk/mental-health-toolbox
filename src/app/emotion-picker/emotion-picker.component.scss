@@ -1,4 +1,14 @@
 .emotion-picker {
+  height: 100vh;
+  .title {
+    width: 100%;
+    h1 {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      margin-bottom: 50px;
+    }
+  }
   .emotion-picker-menu {
     display: flex;
     flex-direction: column;
@@ -9,5 +19,20 @@
       width: 100%;
       margin-bottom: 20px;
     }
+  }
+
+  .emotion-row {
+    width: 100%;
+  }
+
+  .emotion-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .emotion-fa-icon {
+    font-size: 110px;
   }
 }
