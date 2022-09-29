@@ -1,0 +1,50 @@
+
+.affirmation-container {
+    background-color: #111419;
+    width: 100vw;
+    height: 100vh;
+}
+.affirmation {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #CCBCAC;
+    text-align: center;
+    animation-name: example;
+    animation-duration: 10s;
+    transform: translateY(100vh);
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.delay-1s {
+    animation-delay: 1s;
+    animation-duration: 6s;
+}
+
+.delay-3s {
+    animation-delay: 0s;
+    animation-duration: 8s;
+
+}
+
+.affirmation h2 {
+    font-size: 22px;
+}
+
+.affirmation p:before {
+    content: '';
+    display: block;
+    height: 50px;
+    width: 2px;
+    background-color: #CCBCAC;
+    margin: 0 auto;
+}
+
+@keyframes example {
+    0% {
+        transform: translateY(100vh)
+    }
+    100% {
+        transform: translateY(-200vh)
+    }
+  }
+
