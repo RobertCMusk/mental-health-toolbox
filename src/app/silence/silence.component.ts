@@ -1,5 +1,6 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Subject } from 'rxjs';
 
 @Component({
@@ -46,15 +47,13 @@ import { Subject } from 'rxjs';
   ]
 })
 export class SilenceComponent implements OnInit {
-
-  public textSubject = new Subject<string>();
-  public textObservable = this.textSubject.asObservable();
-
   public inhaleTimer = 10000;
 
   public isInhaling = false;
 
-  constructor() { }
+  constructor(
+    public router: Router
+  ) { }
 
   ngOnInit(): void {
     setTimeout(() => {
@@ -70,5 +69,9 @@ export class SilenceComponent implements OnInit {
       this.toggleInhale();
     }, this.inhaleTimer);
   };
+
+  public goBack():void {
+    this.router.navigateByUrl('/');
+  }
 
 }
