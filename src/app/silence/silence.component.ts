@@ -10,13 +10,11 @@ import { Subject } from 'rxjs';
     trigger('inhaleExhaleText', [
       state('inhale', style({
         fontSize: '100px',
-        color: '#98B1C4',
-        borderColor: '#98B1C4'
+        color: '#98B1C4'
       })),
       state('exhale', style({
         fontSize: '12px',
-        color: '#4D387C',
-        borderColor: '#4D387C'
+        color: '#4D387C'
       })),
       transition('inhale => exhale', [
         animate('10s')
@@ -25,6 +23,26 @@ import { Subject } from 'rxjs';
         animate('10s')
       ]),
     ]),
+    trigger('inhaleExhaleCircle', [
+      state('inhale', style({
+        height: '350px',
+        width: '350px',
+        borderColor: '#98B1C4',
+        borderWidth: '15px'
+      })),
+      state('exhale', style({
+        height: '0px',
+        width: '0px',
+        borderColor: '#4D387C',
+        borderWidth: '1px'
+      })),
+      transition('inhale => exhale', [
+        animate('10s')
+      ]),
+      transition('exhale => inhale', [
+        animate('10s')
+      ]),
+    ])
   ]
 })
 export class SilenceComponent implements OnInit {
