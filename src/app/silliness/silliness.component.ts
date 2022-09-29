@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-silliness',
@@ -9,7 +10,10 @@ import { HttpClient } from '@angular/common/http';
 export class SillinessComponent implements OnInit {
   
 
-  constructor(private http: HttpClient) { }
+  constructor(
+    private http: HttpClient,
+    private router: Router,
+    ) { }
 
   public cats:any = [];
 
@@ -17,6 +21,9 @@ export class SillinessComponent implements OnInit {
     this.getCats();
   }
 
+  public goBack() {
+    this.router.navigateByUrl('/action-picker')
+  }
   public getCats() {
     this.http.get('https://api.thecatapi.com/v1/images/search?limit=99').subscribe(data => {
       console.log(data);
