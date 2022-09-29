@@ -1,50 +1,57 @@
+@import "../../_variables.scss";
 
 .affirmation-container {
-    background-color: #111419;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 .affirmation {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #CCBCAC;
+    color: $black;
     text-align: center;
-    animation-name: example;
-    animation-duration: 10s;
+    animation-name: scroll;
+    animation-duration: 20s;
     transform: translateY(100vh);
     width: 80vw;
     margin: 0 auto;
+    line-height: 1.6;
+    opacity: 0;
 }
-
 .delay-1s {
     animation-delay: 1s;
-    animation-duration: 6s;
+    animation-duration: 20s;
 }
-
 .delay-3s {
-    animation-delay: 0s;
-    animation-duration: 8s;
-
+    animation-delay: 2s;
+    animation-duration: 20s;
 }
-
 .affirmation h2 {
     font-size: 22px;
 }
-
 .affirmation p:before {
     content: '';
     display: block;
     height: 50px;
     width: 2px;
-    background-color: #CCBCAC;
+    background-color: $black;
     margin: 0 auto;
 }
-
-@keyframes example {
+@keyframes scroll {
     0% {
-        transform: translateY(100vh)
+        transform: translateY(100vh);
+        line-height: 1.6;
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    50% {
+        line-height: 4;
     }
     100% {
-        transform: translateY(-200vh)
+        transform: translateY(-200vh);
+        line-height: 4;
+        opacity: 1;
     }
-  }
+}
 
