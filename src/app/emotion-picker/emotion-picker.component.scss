@@ -1,4 +1,13 @@
 .emotion-picker {
+  .title {
+    width: 100%;
+    h1 {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      margin-bottom: 50px;
+    }
+  }
   .emotion-picker-menu {
     display: flex;
     flex-direction: column;
