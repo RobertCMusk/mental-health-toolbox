@@ -3,3 +3,19 @@
 /* Importing Bootstrap SCSS file. */
 @import "_variables.scss";
 @import '~bootstrap/scss/bootstrap';
+
+button {
+  height: 86px;
+}
+
+body {
+  color: $white;
+}
+
+.gradient-mesh {
+  background-color:hsl(267, 100%, 76%, 1.0);
+  background-image:
+  radial-gradient(at 80% 100%, hsl(246, 100%, 88%, 1.0) 0px, transparent 50%),
+  radial-gradient(at 0% 20%, hsl(203, 33%, 67%, 1.0) 0px, transparent 50%),
+  radial-gradient(at 10% 80%, hsl(261, 40%, 36%, 1.0) 0px, transparent 50%);
+}
