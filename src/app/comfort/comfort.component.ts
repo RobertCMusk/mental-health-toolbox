@@ -16,7 +16,6 @@ export class ComfortComponent implements OnInit {
   }
 
   public goBack():void {
-    this.router.navigateByUrl('/');
+    this.router.navigateByUrl('/action-picker');
   }
-
 }

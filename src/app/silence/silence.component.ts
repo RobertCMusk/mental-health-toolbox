@@ -71,7 +71,7 @@ export class SilenceComponent implements OnInit {
   };
 
   public goBack():void {
-    this.router.navigateByUrl('/');
+    this.router.navigateByUrl('/action-picker');
   }
 
 }
