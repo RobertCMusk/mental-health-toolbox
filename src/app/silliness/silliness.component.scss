@@ -28,11 +28,16 @@
 }
 
 .cat-image {
-    max-width: 90vw;
+    width: 90vw;
     margin: 20px 0;
     border-radius: 16px;
 }
 
 .silliness-content {
     margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
 }
