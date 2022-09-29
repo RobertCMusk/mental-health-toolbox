@@ -10,6 +10,7 @@ import { ComfortComponent } from './comfort/comfort.component';
 import { ConnectionComponent } from './connection/connection.component';
 import { SillinessComponent } from './silliness/silliness.component';
 import { SilenceComponent } from './silence/silence.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SilenceComponent } from './silence/silence.component';
   imports: [
     BrowserModule,
     NgbModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
