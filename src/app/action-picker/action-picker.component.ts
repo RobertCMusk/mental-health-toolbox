@@ -18,5 +18,8 @@ export class ActionPickerComponent implements OnInit {
   public goToSillines(): void {
     this.router.navigateByUrl('/silliness')
   }
+  public gotoSilence(): void {
+    this.router.navigateByUrl('/silence');
+  }
 
 }
