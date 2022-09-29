@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-emotion-picker',
   templateUrl: './emotion-picker.component.html', 
@@ -14,7 +15,9 @@ export class EmotionPickerComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+
   }
+
 
   public gotoNextPage():void {
     this.router.navigateByUrl('/action-picker');

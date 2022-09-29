@@ -1,0 +1,16 @@
+.silliness {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cat-image {
+    max-width: 90vw;
+    margin: 20px 0;
+}
+
+.not-moving {
+    position: absolute;
+    top: 0;
+}
